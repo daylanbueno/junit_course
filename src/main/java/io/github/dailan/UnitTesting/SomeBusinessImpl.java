@@ -1,5 +1,8 @@
 package io.github.dailan.UnitTesting;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class SomeBusinessImpl {
 
     private SomeDataService someDataService;
