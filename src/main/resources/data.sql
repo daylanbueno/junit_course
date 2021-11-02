@@ -1,1 +1,11 @@
-insert into item(id,name, price, quantity) values(11, "Banana", 199, 10);
+INSERT INTO ITEM(ID,NAME,PRICE, QUANTITY)
+VALUES (1,'Computer', 5900, 10);
+
+INSERT INTO ITEM(ID,NAME,PRICE, QUANTITY)
+VALUES (2,'Notebook', 3500, 10);
+
+INSERT INTO ITEM(ID,NAME,PRICE, QUANTITY)
+VALUES (3,'Cell Phone', 1500, 10);
+
+INSERT INTO ITEM(ID,NAME,PRICE, QUANTITY)
+VALUES (4,'Camera', 2500, 10);

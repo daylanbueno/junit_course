@@ -1,0 +1,8 @@
+package io.github.dailan.UnitTesting.repository;
+
+import io.github.dailan.UnitTesting.model.Item;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+public interface ItemRepository extends JpaRepository<Item, Integer> {
+}
