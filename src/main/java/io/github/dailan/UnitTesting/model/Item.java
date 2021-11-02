@@ -6,8 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 @Data
 @Builder
@@ -20,4 +20,6 @@ public class Item {
     private String name;
     private int price;
     private int quantity;
+    @Transient
+    private int value;
 }
