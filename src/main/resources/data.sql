@@ -1,0 +1,1 @@
+insert into item(id,name, price, quantity) values(11, "Banana", 199, 10);
