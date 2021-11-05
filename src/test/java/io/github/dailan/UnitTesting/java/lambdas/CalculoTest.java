@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import java.util.function.BinaryOperator;
+
 @ExtendWith(SpringExtension.class)
 public class CalculoTest {
 
@@ -39,5 +41,13 @@ public class CalculoTest {
         Calculo divisao = (x,y) -> x / y;
         double resultado = divisao.executar(10,2);
         Assertions.assertEquals(5, resultado);
+    }
+
+    @Test
+    @DisplayName("deve ser capaz de dividir dado x  e y com BinaryOperator")
+    public void deveFazerAdivisaoComBinaryOperator() {
+        BinaryOperator<Double> divisao = (x, y) -> x / y;
+        double resultado = divisao.apply(10.0,2.0);
+        Assertions.assertEquals(5.0, resultado);
     }
 }
