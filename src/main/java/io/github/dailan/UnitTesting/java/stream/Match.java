@@ -16,7 +16,7 @@ public class Match  {
         Aluno ana = Aluno.builder().nome("Ana").nota(5.5).build();
         Aluno bia = Aluno.builder().nome("Bia").nota(6.5).build();
         Aluno amanda = Aluno.builder().nome("Amanda").nota(9.5).build();
-        Aluno dilan = Aluno.builder().nome("Dilan").nota(8.5).build();
+        Aluno dilan = Aluno.builder().nome("Dilan").nota(10.0).build();
 
         List<Aluno> alunosReprovados = Arrays.asList(ana,bia);
 
